@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{{ STATIC_URL }}css/material.min.css">
+        <title>Placeholder Name</title>
+    </head>
+
+    <body>
+        {% block body %}
+            {% include '_include/header.html' %}
+            {% block content %}{% endblock %}
+
+        {% endblock %}
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="{{ STATIC_URL }}js/material.min.js"></script>
+    </body>
+    {% include '_include/footer.html' %}
+</html>
